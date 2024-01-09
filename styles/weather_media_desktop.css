@@ -32,13 +32,13 @@
     margin: 0;
   }
 
-  ul {
+  aside ul {
     list-style-type: none;
     padding: 5px;
     margin: 0;
   }
 
-  ul :last-child {
+  aside ul :last-child {
     border-radius: 0 0 15px 15px;
   }
 
@@ -47,19 +47,18 @@
     vertical-align: middle;
   }
 
-  li {
+  aside li {
     width: 95%;
     display: flex;
     border: 1px solid #ebf5ee;
     margin: 5px;
-    align-items: center;
   }
 
   article img {
     width: 35%;
   }
 
-  li img {
+  aside li img {
     width: 20%;
     height: 20%;
   }

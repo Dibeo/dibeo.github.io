@@ -9,16 +9,48 @@
   }
 
   article {
+    margin: 0;
+    padding: 0;
     background: linear-gradient(to bottom, #3498db, #144261);
     border-radius: 25px;
-    font-size: 150%;
+    font-size: 200%;
     display: flex;
     flex-direction: column;
     width: 75%;
-    min-width: min-content;
-    height: fit-content;
     margin-bottom: 10px;
     align-items: center;
+
+    img {
+      width: 35%;
+      height: 35%;
+    }
+
+    ul {
+      list-style-type: none;
+      width: 95%;
+    }
+
+    li {
+      display: flex;
+      border: 1px solid #ebf5ee;
+      width: 92.5%;
+    }
+
+    li > img {
+      width: 25%;
+      height: 25%;
+      transform: translate(0%, 25%);
+    }
+
+    p {
+      width: fit-content;
+    }
+  }
+
+  h2 {
+    padding-top: 15px;
+    margin: 0;
+    font-size: 250%;
   }
 
   aside {
@@ -32,51 +64,34 @@
     margin-bottom: 10px;
     align-items: center;
     align-content: center;
-  }
 
-  h2 {
-    padding-top: 15px;
-    margin: 0;
-    font-size: 250%;
-  }
+    ul {
+      list-style-type: none;
+      width: 95%;
+    }
 
-  ul {
-    list-style-type: none;
-    width: 100%;
-  }
+    ul:last-child {
+      border-radius: 0 0 15px 15px;
+    }
 
-  ul :last-child {
-    border-radius: 0 0 15px 15px;
-  }
+    p {
+      padding: 2px;
+      margin: 0;
+    }
 
-  td {
-    text-align: center;
-    vertical-align: middle;
-  }
+    li {
+      width: 92.5%;
+      display: flex;
+      border: 1px solid #ebf5ee;
+      align-items: center;
+      font-size: 250%;
+      margin-bottom: 10px;
+    }
 
-  li {
-    width: 95%;
-    display: flex;
-    border: 1px solid #ebf5ee;
-    align-items: center;
-    font-size: 250%;
-  }
-
-  article img {
-    width: 35%;
-  }
-
-  li img {
-    width: 30%;
-    height: 30%;
-  }
-
-  .main {
-    display: flex;
-    align-items: center;
-    padding-bottom: 15px;
-    padding-left: 50%;
-    transform: translate(-15%);
+    li img {
+      width: 30%;
+      height: 30%;
+    }
   }
 
   section {
@@ -85,33 +100,31 @@
     border-radius: 25px;
     font-size: 350%;
     margin-bottom: 10px;
-  }
 
-  td,
-  th {
-    border: 3px solid #ddd;
-    padding: 8px;
-  }
-  th {
-    border-radius: 17px 17px 0 0;
-  }
+    td,
+    th {
+      border: 3px solid #ddd;
+      padding: 8px;
+      text-align: center;
+      vertical-align: middle;
+    }
 
-  td:first-child {
-    border-radius: 0 0 0 17px;
-  }
+    th {
+      border-radius: 17px 17px 0 0;
+    }
 
-  td:last-child {
-    border-radius: 0 0 17px 0;
+    td:first-child {
+      border-radius: 0 0 0 17px;
+    }
+
+    td:last-child {
+      border-radius: 0 0 17px 0;
+    }
   }
 
   .logo {
     width: 15%;
     padding-right: 15px;
-  }
-
-  aside p {
-    padding: 2px;
-    margin: 0;
   }
 
   .loading {
