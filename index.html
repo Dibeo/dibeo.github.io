@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+  <head>
+    <meta charset="utf-16" />
+    <meta name="viewport" content="meteo, en ce moment, temps relle, previsions" />
+    <title>Météo</title>
+    <link rel="stylesheet" href="index.css" />
+    <link
+      rel="icon"
+      href="assets\Default_un_logo_pour_une_application_meteo_2_eca2b1e0-4885-451c-8e86-8c36732356ba_0.png"
+    />
+  </head>
+  <body>
+    <article class="centrer-elements loading">
+      <h1>En ce moment</h1>
+      <img
+        class=""
+        id="weather_icon"
+        src="https://openweathermap.org/img/wn/50d@2x.png"
+        alt="icon qui montre la meteo"
+      />
+      <div class="main">
+        <img
+          class="logo"
+          src="assets\pointeur-de-localisation.png"
+          alt="Location pin"
+        />
+        <p id="location"></p>
+      </div>
+      <div class="main">
+        <img class="logo" src="assets\thermometre.png" alt="thermometre logo" />
+        <p id="temperature"></p>
+      </div>
+      <div class="main">
+        <img class="logo" src="assets/description.png" alt="description logo" />
+        <p id="description"></p>
+      </div>
+      <div class="main">
+        <img class="logo" src="assets\lhorloge.png" alt="horloge logo" />
+        <p id="time-act"></p>
+      </div>
+    </article>
+    <aside class="loading">
+      <h2>Prochaine 24h</h2>
+      <ul id="previsions"></ul>
+    </aside>
+    <section id="soleil" class="loading">
+      <table>
+        <thead><tr><th colspan="2">Levé et couché du soleil</th></tr></thead>
+        <tbody id="table"></tbody>
+      </table>
+    </section>
+
+    <script src="weather.js"></script>
+  </body>
+</html>
