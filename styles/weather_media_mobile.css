@@ -12,32 +12,37 @@
     background: linear-gradient(to bottom, #3498db, #144261);
     border-radius: 25px;
     font-size: 150%;
-    width: 45%;
+    display: flex;
+    flex-direction: column;
+    width: 75%;
     min-width: min-content;
     height: fit-content;
+    margin-bottom: 10px;
+    align-items: center;
   }
 
   aside {
     background: linear-gradient(to top, #3498db, #144261);
-    width: fit-content;
+    width: 75%;
     border-radius: 25px;
     height: fit-content;
     font-size: 100%;
+    display: flex;
+    flex-direction: column;
     margin-bottom: 10px;
+    align-items: center;
+    align-content: center;
   }
 
   h2 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     padding-top: 15px;
     margin: 0;
+    font-size: 250%;
   }
 
   ul {
     list-style-type: none;
-    padding: 5px;
-    margin: 0;
+    width: 100%;
   }
 
   ul :last-child {
@@ -53,8 +58,8 @@
     width: 95%;
     display: flex;
     border: 1px solid #ebf5ee;
-    margin: 5px;
     align-items: center;
+    font-size: 250%;
   }
 
   article img {
@@ -62,14 +67,8 @@
   }
 
   li img {
-    width: 20%;
-    height: 20%;
-  }
-
-  .centrer-elements {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    width: 30%;
+    height: 30%;
   }
 
   .main {
@@ -82,11 +81,9 @@
 
   section {
     background: linear-gradient(to bottom, #ffdb58, #ffb347, #ff8c00, #ff4500);
-    width: fit-content;
-    height: fit-content;
     padding: 15px;
     border-radius: 25px;
-    font-size: 125%;
+    font-size: 350%;
     margin-bottom: 10px;
   }
 
