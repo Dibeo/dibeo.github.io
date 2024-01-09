@@ -1,0 +1,132 @@
+@media only screen and (max-width: 1023px) {
+  body {
+    background-color: #252525;
+    color: #ebf5ee;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  article {
+    background: linear-gradient(to bottom, #3498db, #144261);
+    border-radius: 25px;
+    font-size: 150%;
+    width: 45%;
+    min-width: min-content;
+    height: fit-content;
+  }
+
+  aside {
+    background: linear-gradient(to top, #3498db, #144261);
+    width: fit-content;
+    border-radius: 25px;
+    height: fit-content;
+    font-size: 100%;
+    margin-bottom: 10px;
+  }
+
+  h2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 15px;
+    margin: 0;
+  }
+
+  ul {
+    list-style-type: none;
+    padding: 5px;
+    margin: 0;
+  }
+
+  ul :last-child {
+    border-radius: 0 0 15px 15px;
+  }
+
+  td {
+    text-align: center;
+    vertical-align: middle;
+  }
+
+  li {
+    width: 95%;
+    display: flex;
+    border: 1px solid #ebf5ee;
+    margin: 5px;
+    align-items: center;
+  }
+
+  article img {
+    width: 35%;
+  }
+
+  li img {
+    width: 20%;
+    height: 20%;
+  }
+
+  .centrer-elements {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .main {
+    display: flex;
+    align-items: center;
+    padding-bottom: 15px;
+    padding-left: 50%;
+    transform: translate(-15%);
+  }
+
+  section {
+    background: linear-gradient(to bottom, #ffdb58, #ffb347, #ff8c00, #ff4500);
+    width: fit-content;
+    height: fit-content;
+    padding: 15px;
+    border-radius: 25px;
+    font-size: 125%;
+    margin-bottom: 10px;
+  }
+
+  td,
+  th {
+    border: 3px solid #ddd;
+    padding: 8px;
+  }
+  th {
+    border-radius: 17px 17px 0 0;
+  }
+
+  td:first-child {
+    border-radius: 0 0 0 17px;
+  }
+
+  td:last-child {
+    border-radius: 0 0 17px 0;
+  }
+
+  .logo {
+    width: 15%;
+    padding-right: 15px;
+  }
+
+  aside p {
+    padding: 2px;
+    margin: 0;
+  }
+
+  .loading {
+    animation: slideIn 2s cubic-bezier(0.19, 1, 0.22, 1);
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
