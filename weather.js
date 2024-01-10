@@ -79,30 +79,22 @@ let app = {
         ).src = `https://openweathermap.org/img/wn/${icon}@2x.png`;
         let leve = new Date(data.sys.sunrise * 1000);
         let couche = new Date(data.sys.sunset * 1000);
-        document.getElementById("table_aujourdhui").innerHTML = `
-                        <td><p>Aujourd'hui</p></td>
-                        <td>${leve.getUTCHours()}:${leve.getUTCMinutes()}</td>
-                        <td>${couche.getUTCHours()}:${couche.getUTCMinutes()}</td>
-                      `;
         let act = new Date();
         if (!(act>leve && act<couche))
         {
           document.getElementById("meteo").style.backgroundImage = "url('../assets/background_n.jpg')";
           document.getElementById("meteo").style.color = "#ebf5ee";
         }
-        /*leve = new Date(data.sys.sunrise * 1000);
-        couche = new Date(data.sys.sunset * 1000);
-        console.log(data);
-        document.getElementById("table_demain").innerHTML = `
-                          <td><p>Demain</p></td>        
-                          <td>${leve.getUTCHours()}:${leve.getUTCMinutes()}</td>
-                          <td>${couche.getUTCHours()}:${couche.getUTCMinutes()}</td>
-                          `;*/
+        document.getElementById("table_aujourdhui").innerHTML = `
+                        <td><p>Aujourd'hui</p></td>
+                        <td>${leve.getUTCHours()}:${leve.getUTCMinutes()}</td>
+                        <td>${couche.getUTCHours()}:${couche.getUTCMinutes()}</td>
+                      `;
       })
       .catch((error) => console.error("Error fetching weather data:", error));
   },
 
-  
+
   getWeatherForecast() {
     const apiUrl = `https://api.openweathermap.org/data/2.5/forecast?lat=${this.donnees.latitude}&lon=${this.donnees.longitude}&appid=${this.donnees.apiKey}&units=metric&cnt=8&lang=fr`;
 

@@ -1,6 +1,7 @@
 @media only screen and (max-width: 1023px) {
   body {
-    background-color: #252525;
+    background: linear-gradient(to bottom, #363636, #252525);
+    background-color: #363636;
     color: #ebf5ee;
     display: flex;
     flex-direction: column;
@@ -11,7 +12,10 @@
   article {
     margin: 0;
     padding: 0;
-    background: linear-gradient(to bottom, #3498db, #144261);
+    background-image: url('../assets/background_d.jpg');
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
     border-radius: 25px;
     font-size: 220%;
     width: 75%;

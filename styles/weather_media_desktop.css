@@ -1,10 +1,12 @@
 @media only screen and (min-width: 1024px) {
   body {
     background: linear-gradient(to bottom, #363636, #252525);
+    background-color: #363636;
     color: #ebf5ee;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    
   }
 
   article {
