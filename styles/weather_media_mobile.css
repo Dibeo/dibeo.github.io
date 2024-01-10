@@ -80,7 +80,8 @@
     li {
       width: 92.5%;
       display: flex;
-      border: 1px solid #ebf5ee;
+      border-top: 1px solid #ebf5ee;
+      border-bottom: 1px solid #ebf5ee;
       align-items: center;
       font-size: 250%;
       margin-bottom: 10px;
