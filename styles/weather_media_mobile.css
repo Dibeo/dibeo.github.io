@@ -106,18 +106,21 @@
       padding: 8px;
       text-align: center;
       vertical-align: middle;
+      height: fit-content;
     }
 
     th {
       border-radius: 17px 17px 0 0;
     }
 
-    td:first-child {
-      border-radius: 0 0 0 17px;
-    }
+    tr:last-child {
+      td:first-child {
+        border-radius: 0 0 0 17px;
+      }
 
-    td:last-child {
-      border-radius: 0 0 17px 0;
+      td:last-child {
+        border-radius: 0 0 17px 0;
+      }
     }
   }
 
