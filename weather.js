@@ -97,11 +97,9 @@ let app = {
     fetch(apiUrl)
       .then((response) => response.json())
       .then((data) => {
-        console.log(data);
         let prevision = data.list.map((elem) => {
           const date = new Date(elem.dt * 1000);
           const desc = elem.weather[0].description;
-          console.log(elem);
           return `<li>
                     <img src="${`https://openweathermap.org/img/wn/${elem.weather[0].icon}@2x.png`}"/>
                     <div class="secondaire"><p>${
