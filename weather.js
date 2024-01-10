@@ -102,6 +102,7 @@ let app = {
       .catch((error) => console.error("Error fetching weather data:", error));
   },
 
+  
   getWeatherForecast() {
     const apiUrl = `https://api.openweathermap.org/data/2.5/forecast?lat=${this.donnees.latitude}&lon=${this.donnees.longitude}&appid=${this.donnees.apiKey}&units=metric&cnt=8&lang=fr`;
 
