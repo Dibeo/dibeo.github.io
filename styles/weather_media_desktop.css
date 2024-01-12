@@ -1,9 +1,9 @@
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 769px) {
   body {
     color: #ebf5ee;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 25%));
+    gap: 25px;
   }
 
   body::before {
@@ -27,17 +27,17 @@
     background-repeat: no-repeat;
     border-radius: 25px;
     font-size: 150%;
-    width: 25%;
     margin-bottom: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: fit-content;
 
     > img {
       width: 60%;
-      height: 60%;
+    }
+    h1 {
+      font-size: 220%;
     }
 
     ul {
@@ -71,7 +71,6 @@
 
   aside {
     background: linear-gradient(to top, #3498db, #144261);
-    width: 25%;
     border-radius: 25px;
     height: fit-content;
     font-size: 60%;
@@ -115,14 +114,17 @@
     background: linear-gradient(to bottom, #ffdb58, #ffb347, #ff8c00, #ff4500);
     padding: 15px;
     border-radius: 25px;
-    font-size: 100%;
+    font-size: 150%;
     margin-bottom: 10px;
     height: fit-content;
+
+    table {
+      width: 100%;
+    }
 
     td,
     th {
       border: 3px solid #ddd;
-      padding: 15px;
       text-align: center;
       vertical-align: middle;
     }

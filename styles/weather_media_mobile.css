@@ -1,4 +1,4 @@
-@media only screen and (max-width: 1023px) {
+@media only screen and (max-width: 768px) {
   body {
     color: #ebf5ee;
     display: flex;
@@ -27,6 +27,7 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    color: #252525;
     border-radius: 25px;
     font-size: 220%;
     width: 95%;
