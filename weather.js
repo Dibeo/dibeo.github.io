@@ -19,6 +19,10 @@ let app = {
       minutes: 0,
       secondes: 0,
     },
+    soleil: {
+      leve: 0,
+      couche: 0,
+    },
   },
   getTime() {
     let date = new Date();
@@ -77,23 +81,30 @@ let app = {
         document.getElementById(
           "weather_icon"
         ).src = `https://openweathermap.org/img/wn/${icon}@2x.png`;
-        let leve = new Date(data.sys.sunrise * 1000);
-        let couche = new Date(data.sys.sunset * 1000);
-        let act = new Date();
-        /*if (!(act>leve && act<couche))
-        {
-          document.getElementById("meteo").style.backgroundImage = "url('../assets/background_n.jpg')";
-          document.getElementById("meteo").style.color = "#ebf5ee";
-        }*/
-        document.getElementById("table_aujourdhui").innerHTML = `
-                        <td><p>Aujourd'hui</p></td>
-                        <td>${leve.getUTCHours()}:${leve.getUTCMinutes()}</td>
-                        <td>${couche.getUTCHours()}:${couche.getUTCMinutes()}</td>
+        this.donnees.soleil.leve = new Date(data.sys.sunrise * 1000);
+        this.donnees.soleil.couche = new Date(data.sys.sunset * 1000);
+        document.getElementById("h_leve").textContent = `
+        ${this.donnees.soleil.leve.getHours()}:${this.donnees.soleil.leve.getMinutes()}
                       `;
+        document.getElementById("h_couche").textContent = `
+                        ${this.donnees.soleil.couche.getHours()}:${this.donnees.soleil.couche.getMinutes()}
+                      `;
+        let act = new Date();
+        if(!(act < this.donnees.soleil.leve || act > this.donnees.soleil.couche))
+        {
+          console.log("couché")
+          document.getElementById("aiguille").style.opacity = "0";
+        } else {
+          console.log("levé");
+          let heure = act.getHours() - this.donnees.soleil.leve.getHours();
+          let minute = act.getMinutes() - this.donnees.soleil.leve.getMinutes();
+          let tot = heure*60 + minute
+          console.log(tot%180)
+          document.getElementById("aiguille").style.transform = `rotate(${tot%180}deg)`;
+        }
       })
       .catch((error) => console.error("Error fetching weather data:", error));
   },
-
 
   getWeatherForecast() {
     const apiUrl = `https://api.openweathermap.org/data/2.5/forecast?lat=${this.donnees.latitude}&lon=${this.donnees.longitude}&appid=${this.donnees.apiKey}&units=metric&cnt=8&lang=fr`;
