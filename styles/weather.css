@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css?family=Muli&display=swap");
+
+body {
+  --bg-color-card: rgba(82, 109, 130, 0.85);
+  --border-color: #dde6ed;
+  --text-color: #9db2bf;
+  background-color: #27374d;
+  background-image: url(../assets/pexels-eberhard-grossgasteiger-1743366.jpg);
+  background-size: cover;
+  background-position: center;
+  display: grid;
+  grid-template-areas:
+    "card1 card2"
+    "card3 card2";
+  grid-template-columns: minmax(350px, 30%) auto;
+  gap: 25px;
+  color: var(--text-color);
+  font-family: "Muli", sans-serif;
+
+  article {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--bg-color-card);
+    border-radius: 25px;
+    align-items: center;
+    height: fit-content;
+    padding: 20px;
+    grid-area: card1;
+    font-size: 125%;
+
+    > img {
+      width: 50%;
+      height: 50%;
+    }
+
+    li {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 15px;
+
+      > p {
+        padding: 0;
+        margin: 0;
+        padding-top: 3%;
+      }
+
+      > img {
+        width: 11%;
+        height: 11%;
+        padding: 0;
+        margin: 0;
+        margin-right: 15px;
+      }
+    }
+  }
+  aside {
+    background-color: var(--bg-color-card);
+    border-radius: 25px;
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-area: card2;
+    li {
+      display: flex;
+      border-top: 3px solid var(--border-color);
+      border-bottom: 3px solid var(--border-color);
+      margin: 15px;
+
+      p {
+        padding: 0;
+        margin: 0;
+        padding-top: 3%;
+      }
+      > img {
+        width: 30%;
+        height: 30%;
+      }
+    }
+  }
+
+  section {
+    background-color: var(--bg-color-card);
+    grid-row: 0;
+    height: fit-content;
+    border-radius: 25px;
+    padding: 10px;
+    grid-area: card3;
+  }
+
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+}
+
+.loading {
+  animation: slideIn 2s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}

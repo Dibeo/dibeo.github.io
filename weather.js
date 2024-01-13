@@ -80,11 +80,11 @@ let app = {
         let leve = new Date(data.sys.sunrise * 1000);
         let couche = new Date(data.sys.sunset * 1000);
         let act = new Date();
-        if (!(act>leve && act<couche))
+        /*if (!(act>leve && act<couche))
         {
           document.getElementById("meteo").style.backgroundImage = "url('../assets/background_n.jpg')";
           document.getElementById("meteo").style.color = "#ebf5ee";
-        }
+        }*/
         document.getElementById("table_aujourdhui").innerHTML = `
                         <td><p>Aujourd'hui</p></td>
                         <td>${leve.getUTCHours()}:${leve.getUTCMinutes()}</td>
@@ -115,7 +115,7 @@ let app = {
           }:00</p><p>${elem.main.temp}°C</p><p>${
             desc[0].toUpperCase() + desc.substr(1)
           }</p>
-                    </div>
+                     
                   </li>`;
         });
 
