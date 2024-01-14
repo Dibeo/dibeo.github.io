@@ -7,89 +7,94 @@ body {
   background-color: #27374d;
   background-image: url(../assets/pexels-eberhard-grossgasteiger-1743366.jpg);
   background-size: cover;
-  background-position: center;
-  display: grid;
-  grid-template-areas:
-    "card1 card2"
-    "card3 card2";
-  grid-template-columns: minmax(350px, 30%) auto;
-  grid-template-rows: minmax(400px, 55%) auto;
-  gap: 25px;
-  color: var(--text-color);
-  font-family: "Muli", sans-serif;
 
-  article {
-    display: flex;
-    flex-direction: column;
-    background-color: var(--bg-color-card);
-    border-radius: 25px;
-    align-items: center;
-    height: fit-content;
-    padding: 20px;
-    grid-area: card1;
-    font-size: 125%;
+  main {
+    background-position: center;
+    display: grid;
+    grid-template-areas:
+      "card1 card2"
+      "card3 card2";
+    grid-template-columns: minmax(350px, 30%) auto;
+    grid-template-rows: minmax(350px, 70%) auto;
+    row-gap: 5px;
+    column-gap: 15px;
+    color: var(--text-color);
+    font-family: "Muli", sans-serif;
 
-    > img {
-      width: 50%;
-      height: 50%;
-    }
-
-    li {
+    > :nth-child(1) {
       display: flex;
-      justify-content: center;
-      margin-bottom: 15px;
-
-      > p {
-        padding: 0;
-        margin: 0;
-        padding-top: 3%;
-      }
+      flex-direction: column;
+      background-color: var(--bg-color-card);
+      border-radius: 25px;
+      align-items: center;
+      height: fit-content;
+      padding: 20px;
+      grid-area: card1;
+      font-size: 125%;
 
       > img {
-        width: 11%;
-        height: 11%;
-        padding: 0;
-        margin: 0;
-        margin-right: 15px;
+        width: 50%;
+        height: 50%;
+      }
+
+      li {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 15px;
+
+        > p {
+          padding: 0;
+          margin: 0;
+          padding-top: 3%;
+        }
+
+        > img {
+          width: 11%;
+          height: 11%;
+          padding: 0;
+          margin: 0;
+          margin-right: 15px;
+        }
       }
     }
-  }
-  aside {
-    background-color: var(--bg-color-card);
-    border-radius: 25px;
-    width: fit-content;
-    height: fit-content;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    grid-area: card2;
-    li {
+    > :nth-child(2) {
+      background-color: var(--bg-color-card);
+      border-radius: 25px;
+      width: fit-content;
+      height: fit-content;
       display: flex;
-      border-top: 3px solid var(--border-color);
-      border-bottom: 3px solid var(--border-color);
-      margin: 15px;
+      flex-direction: column;
+      align-items: center;
+      grid-area: card2;
+      li {
+        display: flex;
+        border-top: 3px solid var(--border-color);
+        border-bottom: 3px solid var(--border-color);
+        margin: 15px;
+        padding: 5px;
 
-      p {
-        padding: 0;
-        margin: 0;
-        padding-top: 3%;
-      }
-      > img {
-        width: 30%;
-        height: 30%;
+        p {
+          padding: 0;
+          margin: 0;
+          padding-top: 3%;
+        }
+        > img {
+          width: 30%;
+          height: 30%;
+        }
       }
     }
-  }
 
-  section {
-    background-color: var(--bg-color-card);
-    grid-row: 0;
-    border-radius: 25px;
-    padding: 10px;
-    height: fit-content;
-    grid-area: card3;
+    > :nth-child(3) {
+      margin: 0;
+      background-color: var(--bg-color-card);
+      grid-row: 0;
+      border-radius: 25px;
+      padding: 10px;
+      height: fit-content;
+      grid-area: card3;
 
-    #cadran_solaire {
+      #cadran_solaire {
         display: grid;
         grid-template-columns: 10% auto 10%;
         background-image: url("../assets/clock.png");
@@ -99,42 +104,41 @@ body {
         height: 150px;
         padding-bottom: 15px;
 
-        #aiguille{
-            width: 50%;
-            height: 5px;
-            border-radius: 5px;
-            border: 2px dotted #252525;
-            align-self: end;
-            transform: rotate(10deg);
-            transform-origin: 100% 100%;
-            padding: 0;
-            margin: 0;
+        #aiguille {
+          width: 50%;
+          height: 5px;
+          align-self: end;
+          transform: rotate(10deg);
+          transform-origin: 100% 100%;
+          padding: 0;
+          margin: 0;
 
-            > span {
-                background-color: var(--text-color);
-                display: flex;
-                flex-direction: column;
-                overflow: hidden;
-                min-width: 70%;
-                width: 50px;
-                height: 100%;
-                transform: translate(40%, 0px);
-            }
+          > span {
+            background-color: var(--text-color);
+            display: flex;
+            border-radius: 5px;
+            flex-direction: column;
+            overflow: hidden;
+            min-width: 70%;
+            width: 50px;
+            height: 100%;
+            transform: translate(40%, 0px);
+          }
         }
         p {
-            align-self: end;
-            padding: 0;
-            margin: 0;
+          align-self: end;
+          padding: 0;
+          margin: 0;
         }
+      }
     }
-    
-  }
 
-  ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    width: 100%;
+    ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      width: 100%;
+    }
   }
 }
 

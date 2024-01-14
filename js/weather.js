@@ -90,17 +90,14 @@ let app = {
                         ${this.donnees.soleil.couche.getHours()}:${this.donnees.soleil.couche.getMinutes()}
                       `;
         let act = new Date();
-        if(!(act < this.donnees.soleil.leve || act > this.donnees.soleil.couche))
+        if((act < this.donnees.soleil.leve || act > this.donnees.soleil.couche))
         {
-          console.log("couché")
           document.getElementById("aiguille").style.opacity = "0";
         } else {
-          console.log("levé");
           let heure = act.getHours() - this.donnees.soleil.leve.getHours();
           let minute = act.getMinutes() - this.donnees.soleil.leve.getMinutes();
-          let tot = heure*60 + minute
-          console.log(tot%180)
-          document.getElementById("aiguille").style.transform = `rotate(${tot%180}deg)`;
+          let tot = heure*60 + minute;
+          document.getElementById("aiguille").style.transform = `rotate(${-20 + tot%180}deg)`;
         }
       })
       .catch((error) => console.error("Error fetching weather data:", error));
