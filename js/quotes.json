@@ -1,0 +1,320 @@
+{
+    "citations": [
+        {
+            "texte": "La vie est vraiment simple, mais nous insistons à la rendre compliquée.",
+            "auteur": "Confucius"
+        },
+        {
+            "texte": "Le seul endroit où le succès vient avant le travail est dans le dictionnaire.",
+            "auteur": "Vidal Sassoon"
+        },
+        {
+            "texte": "La meilleure façon de prédire l'avenir est de le créer.",
+            "auteur": "Peter Drucker"
+        },
+        {
+            "texte": "La vie est 10 % ce qui nous arrive et 90 % comment nous y réagissons.",
+            "auteur": "Charles R. Swindoll"
+        },
+        {
+            "texte": "Le succès, c'est tomber sept fois et se relever huit.",
+            "auteur": "Proverbe japonais"
+        },
+        {
+            "texte": "Le pessimiste se plaint du vent; l'optimiste espère qu'il va changer; le réaliste ajuste ses voiles.",
+            "auteur": "William Arthur Ward"
+        },
+        {
+            "texte": "La vie devient plus facile lorsque vous supprimez les personnes négatives de votre environnement.",
+            "auteur": "Inconnu"
+        },
+        {
+            "texte": "Le secret du bonheur, c'est la liberté. Le secret de la liberté, c'est le courage.",
+            "auteur": "Thucydide"
+        },
+        {
+            "texte": "Le bonheur n'est pas quelque chose que l'on possède; c'est quelque chose que l'on est.",
+            "auteur": "Ludwig Wittgenstein"
+        },
+        {
+            "texte": "Ne pleurez pas parce que c'est fini, souriez parce que c'est arrivé.",
+            "auteur": "Dr. Seuss"
+        },
+        {
+            "texte": "La vie est courte, l'art est long, l'occasion fugitive, l'expérience trompeuse, le jugement difficile.",
+            "auteur": "Hippocrate"
+        },
+        {
+            "texte": "L'avenir appartient à ceux qui croient en la beauté de leurs rêves.",
+            "auteur": "Eleanor Roosevelt"
+        },
+        {
+            "texte": "Le succès n'est pas final, l'échec n'est pas fatal, c'est le courage de continuer qui compte.",
+            "auteur": "Winston Churchill"
+        },
+        {
+            "texte": "La perfection n'est pas atteignable, mais si nous poursuivons la perfection, nous pouvons atteindre l'excellence.",
+            "auteur": "Vince Lombardi"
+        },
+        {
+            "texte": "La véritable éducation consiste à obtenir le meilleur de soi-même.",
+            "auteur": "Mahatma Gandhi"
+        },
+        {
+            "texte": "Le véritable amour est de trouver votre bonheur dans le bonheur de l'autre.",
+            "auteur": "Robert A. Heinlein"
+        },
+        {
+            "texte": "La seule chose que nous ayons à craindre, c'est la crainte elle-même.",
+            "auteur": "Franklin D. Roosevelt"
+        },
+        {
+            "texte": "Soyez le changement que vous voulez voir dans le monde.",
+            "auteur": "Mahatma Gandhi"
+        },
+        {
+            "texte": "La vie est ce qui se passe pendant que vous êtes occupé à faire d'autres projets.",
+            "auteur": "John Lennon"
+        },
+        {
+            "texte": "La seule façon de faire du bon travail est d'aimer ce que vous faites.",
+            "auteur": "Steve Jobs"
+        },
+        {
+            "texte": "S'il vous plaît, excusez mon écriture, je suis perdu dans mes pensées.",
+            "auteur": "Inconnu"
+        },
+        {
+            "texte": "La patience est la clé du bonheur.",
+            "auteur": "M. J. Limón"
+        },
+        {
+            "texte": "La folie, c'est de faire la même chose et de s'attendre à un résultat différent.",
+            "auteur": "Albert Einstein"
+        },
+        {
+            "texte": "La beauté commence au moment où vous décidez d'être vous-même.",
+            "auteur": "Coco Chanel"
+        },
+        {
+            "texte": "La meilleure manière de prédire le futur est de le créer.",
+            "auteur": "Peter Drucker"
+        },
+        {
+            "texte": "Le courage n'est pas l'absence de peur, mais la conquête de celle-ci.",
+            "auteur": "Nelson Mandela"
+        },
+        {
+            "texte": "La sagesse, c'est d'avoir des rêves suffisamment grands pour ne pas les perdre de vue lorsqu'on les poursuit.",
+            "auteur": "Oscar Wilde"
+        },
+        {
+            "texte": "La vie est vraiment simple, mais nous insistons à la rendre compliquée.",
+            "auteur": "Confucius"
+        },
+        {
+            "texte": "Le bonheur est une direction, pas une destination.",
+            "auteur": "Ralph Waldo Emerson"
+        },
+        {
+            "texte": "Le succès, c'est d'aller d'échec en échec sans perdre son enthousiasme.",
+            "auteur": "Winston Churchill"
+        },
+        {
+            "texte": "Lorsque vous avez éliminé l'impossible, ce qui reste, si improbable soit-il, doit être la vérité.",
+            "auteur": "Arthur Conan Doyle"
+        },
+        {
+            "texte": "La vie est un mystère à vivre, non un problème à résoudre.",
+            "auteur": "Mahatma Gandhi"
+        },
+        {
+            "texte": "La réussite n'est pas la clé du bonheur. Le bonheur est la clé de la réussite. Si vous aimez ce que vous faites, vous réussirez.",
+            "auteur": "Albert Schweitzer"
+        },
+        {
+            "texte": "La seule chose à craindre, c'est la crainte elle-même.",
+            "auteur": "Franklin D. Roosevelt"
+        },
+        {
+            "texte": "La simplicité est l'ultime sophistication.",
+            "auteur": "Leonardo da Vinci"
+        },
+        {
+            "texte": "La folie, c'est de faire la même chose et de s'attendre à un résultat différent.",
+            "auteur": "Albert Einstein"
+        },
+        {
+            "texte": "Le bonheur est souvent la seule chose qu'on puisse donner sans l'avoir et c'est en le donnant qu'on l'acquiert.",
+            "auteur": "Voltaire"
+        },
+        {
+            "texte": "La plus grande gloire n'est pas de ne jamais tomber, mais de se relever à chaque chute.",
+            "auteur": "Confucius"
+        },
+        {
+            "texte": "La vie commence là où commence votre zone de confort.",
+            "auteur": "Neale Donald Walsch"
+        },
+        {
+            "texte": "La vie est trop importante pour être prise au sérieux.",
+            "auteur": "Oscar Wilde"
+        },
+        {
+            "texte": "Le vrai secret du bonheur consiste à prendre plaisir à toutes les petites choses de la vie.",
+            "auteur": "Leigh Hunt"
+        },
+        {
+            "texte": "La vie n'est pas d'attendre que les orages passent, c'est d'apprendre à danser sous la pluie.",
+            "auteur": "Sénèque"
+        },
+        {
+            "texte": "La plus grande aventure que vous puissiez faire est de vivre la vie de vos rêves.",
+            "auteur": "Oprah Winfrey"
+        },
+        {
+            "texte": "La seule façon d'avoir un ami est d'en être un.",
+            "auteur": "Ralph Waldo Emerson"
+        },
+        {
+            "texte": "Le succès n'est pas la clé du bonheur. Le bonheur est la clé du succès. Si vous aimez ce que vous faites, vous serez réussi.",
+            "auteur": "Albert Schweitzer"
+        },
+        {
+            "texte": "La réussite, c'est d'aller d'échec en échec sans perdre son enthousiasme.",
+            "auteur": "Winston Churchill"
+        },
+        {
+            "texte": "La seule chose qui se trouve entre vous et votre rêve, c'est la volonté de l'essayer et la conviction qu'il est réellement possible.",
+            "auteur": "Joel Brown"
+        },
+        {
+            "texte": "La vie n'est pas d'attendre que les orages passent, mais d'apprendre à danser sous la pluie.",
+            "auteur": "Sénèque"
+        },
+        {
+            "texte": "Le plus grand plaisir dans la vie est de faire ce que les autres disent que vous ne pouvez pas faire.",
+            "auteur": "Walter Bagehot"
+        },
+        {
+            "texte": "Le bonheur est une décision que l'on prend d'accepter la vie comme elle est, en cessant de vouloir la changer.",
+            "auteur": "Deepak Chopra"
+        },
+        {
+            "texte": "La vie est courte, le monde est vaste, mais rien n'est impossible.",
+            "auteur": "Grenville Kleiser"
+        },
+        {
+            "texte": "Le succès ne dépend pas de la grandeur de l'effort, mais de la direction de l'effort.",
+            "auteur": "Victor Hugo"
+        },
+        {
+            "texte": "Le vrai voyage de découverte ne consiste pas à chercher de nouveaux paysages, mais à avoir de nouveaux yeux.",
+            "auteur": "Marcel Proust"
+        },
+        {
+            "texte": "La vie est une succession de leçons, qui doivent être vécues pour être comprises.",
+            "auteur": "Helen Keller"
+        },
+        {
+            "texte": "La vie est ce qui se passe pendant que vous êtes occupé à faire d'autres projets.",
+            "auteur": "John Lennon"
+        },
+        {
+            "texte": "La seule limite à notre réalisation de demain sera nos doutes d'aujourd'hui.",
+            "auteur": "Franklin D. Roosevelt"
+        },
+        {
+            "texte": "Le bonheur ne se trouve pas au sommet de la montagne, mais dans la manière de la gravir.",
+            "auteur": "Confucius"
+        },
+        {
+            "texte": "La seule manière de faire du bon travail est d'aimer ce que vous faites.",
+            "auteur": "Steve Jobs"
+        },
+        {
+            "texte": "Le succès n'est pas la clé du bonheur. Le bonheur est la clé du succès. Si vous aimez ce que vous faites, vous réussirez.",
+            "auteur": "Albert Schweitzer"
+        },
+        {
+            "texte": "La seule chose que nous ayons à craindre, c'est la crainte elle-même.",
+            "auteur": "Franklin D. Roosevelt"
+        },
+        {
+            "texte": "La simplicité est la sophistication suprême.",
+            "auteur": "Leonardo da Vinci"
+        },
+        {
+            "texte": "Le succès n'est pas final, l'échec n'est pas fatal : c'est le courage de continuer qui compte.",
+            "auteur": "Winston Churchill"
+        },
+        {
+            "texte": "Le seul moyen de faire du bon travail est d'aimer ce que vous faites.",
+            "auteur": "Steve Jobs"
+        },
+        {
+            "texte": "Le véritable voyage de découverte ne consiste pas à chercher de nouveaux paysages, mais à avoir de nouveaux yeux.",
+            "auteur": "Marcel Proust"
+        },
+        {
+            "texte": "La vie est un mystère à vivre, non un problème à résoudre.",
+            "auteur": "Mahatma Gandhi"
+        },
+        {
+            "texte": "La réussite n'est pas la clé du bonheur. Le bonheur est la clé de la réussite. Si vous aimez ce que vous faites, vous réussirez.",
+            "auteur": "Albert Schweitzer"
+        },
+        {
+            "texte": "La seule chose à craindre, c'est la crainte elle-même.",
+            "auteur": "Franklin D. Roosevelt"
+        },
+        {
+            "texte": "La simplicité est l'ultime sophistication.",
+            "auteur": "Leonardo da Vinci"
+        },
+        {
+            "texte": "Le bonheur est souvent la seule chose qu'on puisse donner sans l'avoir et c'est en le donnant qu'on l'acquiert.",
+            "auteur": "Voltaire"
+        },
+        {
+            "texte": "La plus grande gloire n'est pas de ne jamais tomber, mais de se relever à chaque chute.",
+            "auteur": "Confucius"
+        },
+        {
+            "texte": "La vie commence là où commence votre zone de confort.",
+            "auteur": "Neale Donald Walsch"
+        },
+        {
+            "texte": "La vie est trop importante pour être prise au sérieux.",
+            "auteur": "Oscar Wilde"
+        },
+        {
+            "texte": "Le vrai secret du bonheur consiste à prendre plaisir à toutes les petites choses de la vie.",
+            "auteur": "Leigh Hunt"
+        },
+        {
+            "texte": "La vie n'est pas d'attendre que les orages passent, c'est d'apprendre à danser sous la pluie.",
+            "auteur": "Sénèque"
+        },
+        {
+            "texte": "La plus grande aventure que vous puissiez faire est de vivre la vie de vos rêves.",
+            "auteur": "Oprah Winfrey"
+        },
+        {
+            "texte": "La seule façon d'avoir un ami est d'en être un.",
+            "auteur": "Ralph Waldo Emerson"
+        },
+        {
+            "texte": "Le succès n'est pas la clé du bonheur. Le bonheur est la clé du succès. Si vous aimez ce que vous faites, vous serez réussi.",
+            "auteur": "Albert Schweitzer"
+        },
+        {
+            "texte": "La réussite, c'est d'aller d'échec en échec sans perdre son enthousiasme.",
+            "auteur": "Winston Churchill"
+        },
+        {
+            "texte": "La seule chose qui se trouve entre vous et votre rêve, c'est la volonté de l'essayer et la conviction qu'il est réellement possible.",
+            "auteur": "Joel Brown"
+        }
+    ]
+}

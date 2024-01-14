@@ -90,14 +90,18 @@ let app = {
                         ${this.donnees.soleil.couche.getHours()}:${this.donnees.soleil.couche.getMinutes()}
                       `;
         let act = new Date();
-        if((act < this.donnees.soleil.leve || act > this.donnees.soleil.couche))
-        {
+        if (
+          act < this.donnees.soleil.leve ||
+          act > this.donnees.soleil.couche
+        ) {
           document.getElementById("aiguille").style.opacity = "0";
         } else {
           let heure = act.getHours() - this.donnees.soleil.leve.getHours();
           let minute = act.getMinutes() - this.donnees.soleil.leve.getMinutes();
-          let tot = heure*60 + minute;
-          document.getElementById("aiguille").style.transform = `rotate(${-20 + tot%180}deg)`;
+          let tot = heure * 60 + minute;
+          document.getElementById("aiguille").style.transform = `rotate(${
+            -20 + (tot % 180)
+          }deg)`;
         }
       })
       .catch((error) => console.error("Error fetching weather data:", error));
@@ -139,12 +143,27 @@ let app = {
           this.donnees.longitude = position.coords.longitude;
           this.getWeatherNow();
           this.getWeatherForecast();
+          this.setCitation();
         },
         (error) => console.error("Error getting location:", error)
       );
     } else {
       console.error("La geolocalisation n'est pas supportée et/ou autorisée.");
     }
+  },
+
+  setCitation() {
+    fetch("./js/quotes.json")
+      .then((response) => response.json())
+      .then((data) => {
+        const i = (parseInt(this.donnees.date.jours) + parseInt(this.donnees.date.mois))%data.citations.length;
+          const citation = data.citations[i];
+          document.getElementById("citation").textContent = citation.texte;
+          document.getElementById("auteur").textContent = citation.auteur;
+      })
+      .catch((error) =>
+        console.error("Erreur lors du chargement du fichier JSON:", error)
+      );
   },
 };
 
